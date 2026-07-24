@@ -21,7 +21,7 @@
     },
     
     about: {
-      text: "I'm a developer passionate about creating clean, efficient solutions to complex problems. With a focus on user experience and modern web technologies, I build applications that are both powerful and intuitive. When I'm not coding, you'll find me exploring new frameworks, contributing to open source, or sketching out the next big idea.",
+      text: "I'm a developer passionate about creating clean and efficient solutions to complex problems. With a focus on user experience and modern web technologies, I build applications that are both powerful and intuitive. When I'm not coding, you'll find me exploring new frameworks, or sketching out the next big idea.",
       highlights: [
         "3+ years of development experience",
         "Focus on React & Node.js ecosystems",
@@ -34,10 +34,15 @@
       { name: "TypeScript", category: "Language", level: 85 },
       { name: "Node.js", category: "Backend", level: 80 },
       { name: "Tailwind CSS", category: "Frontend", level: 90 },
-      { name: "PostgreSQL", category: "Database", level: 75 },
+      { name: "MySQL", category: "Database", level: 85 },
+      { name: "MongoDB", category: "Database", level: 75 },
+      { name: "JavaScript", category: "Language", level: 90 },
+      { name: "Express.js", category: "Backend", level: 80 },
+      { name: "RESTful APIs", category: "API", level: 90 },
+      {name: "Next.js", category: "Frontend", level: 90},
       { name: "Git", category: "Tools", level: 85 },
       { name: "Python", category: "Language", level: 70 },
-      { name: "Docker", category: "DevOps", level: 65 }
+      { name: "Java", category: "Language", level: 80 }
     ],
     
     projects: [
@@ -46,7 +51,7 @@
         description: "A website that sells fastners and bolts online. It has a clean and modern design, and is built with React, Node.js, Next.js, and Tailwind CSS.",
         tags: ["React", "Node.js", "nextjs", "Tailwind CSS"],
         link: "https://okagency.in/",
-        image: "🚀"
+        image: "🔩"
       },
       // {
       //   title: "Weather Dash",
