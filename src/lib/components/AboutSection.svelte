@@ -50,7 +50,7 @@
           <div class="space-y-4 text-lg">
             <div class="flex justify-between pb-3 border-b-2 border-zinc-300">
               <span class="font-semibold">Location</span>
-              <span class="text-zinc-600">San Francisco, CA</span>
+              <span class="text-zinc-600">Chennai, IND</span>
             </div>
             <div class="flex justify-between pb-3 border-b-2 border-zinc-300">
               <span class="font-semibold">Experience</span>

@@ -3,10 +3,10 @@ import adapter from '@sveltejs/adapter-static';
 export default {
   kit: {
     adapter: adapter({
-      fallback: '404.html'
-    }),
-    paths: {
-      base: '/your-repo-name', // 👈 Add this
-    }
+      pages: 'build',
+      assets: 'build',
+      fallback: undefined,
+      strict: true
+    })
   }
 };

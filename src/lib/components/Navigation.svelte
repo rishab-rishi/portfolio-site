@@ -11,7 +11,7 @@
       class="text-2xl font-black tracking-tight hover:scale-105 transition-transform"
       style="font-family: 'Space Mono', monospace;"
     >
-      &lt;RC/&gt;
+      &lt;R/&gt;
     </button>
     
     <div class="flex gap-6">

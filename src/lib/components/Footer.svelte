@@ -38,14 +38,14 @@
       >
         <Github class="w-8 h-8" />
       </a>
-      <a
+      <!-- <a
         href={contactData.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         class="hover:scale-110 transition-transform"
       >
         <Linkedin class="w-8 h-8" />
-      </a>
+      </a> -->
       <a
         href="mailto:{contactData.email}"
         class="hover:scale-110 transition-transform"

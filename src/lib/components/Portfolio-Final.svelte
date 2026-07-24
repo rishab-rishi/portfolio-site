@@ -14,7 +14,7 @@
 
   const PORTFOLIO_DATA: PortfolioData = {
     hero: {
-      name: "Rishab Chowdary",
+      name: "Rishab",
       title: "Full Stack Developer",
       tagline: "Building digital experiences that matter",
       description: "Transforming ideas into elegant, functional code"
@@ -42,31 +42,31 @@
     
     projects: [
       {
-        title: "Task Flow Pro",
-        description: "A collaborative project management tool with real-time updates, drag-and-drop kanban boards, and team analytics.",
-        tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-        link: "https://github.com/yourusername/taskflow",
-        image: "🎯"
+        title: "Ok Agencies Website",
+        description: "A website that sells fastners and bolts online. It has a clean and modern design, and is built with React, Node.js, Next.js, and Tailwind CSS.",
+        tags: ["React", "Node.js", "nextjs", "Tailwind CSS"],
+        link: "https://okagency.in/",
+        image: "🚀"
       },
-      {
-        title: "Weather Dash",
-        description: "Beautiful weather dashboard with location-based forecasts, interactive maps, and customizable widgets.",
-        tags: ["React", "TypeScript", "OpenWeather API"],
-        link: "https://github.com/yourusername/weather-dash",
-        image: "🌤️"
-      },
-      {
-        title: "Code Snippet Manager",
-        description: "Organize and share code snippets with syntax highlighting, tagging system, and community features.",
-        tags: ["Next.js", "PostgreSQL", "Prisma"],
-        link: "https://github.com/yourusername/snippet-manager",
-        image: "💾"
-      }
+      // {
+      //   title: "Weather Dash",
+      //   description: "Beautiful weather dashboard with location-based forecasts, interactive maps, and customizable widgets.",
+      //   tags: ["React", "TypeScript", "OpenWeather API"],
+      //   link: "https://github.com/yourusername/weather-dash",
+      //   image: "🌤️"
+      // },
+      // {
+      //   title: "Code Snippet Manager",
+      //   description: "Organize and share code snippets with syntax highlighting, tagging system, and community features.",
+      //   tags: ["Next.js", "PostgreSQL", "Prisma"],
+      //   link: "https://github.com/yourusername/snippet-manager",
+      //   image: "💾"
+      // }
     ],
     
     contact: {
-      email: "alex.chen@email.com",
-      github: "https://github.com/yourusername",
+      email: "rishab.codes01@gmail.com",
+      github: "https://github.com/rishab-rishi",
       linkedin: "https://linkedin.com/in/yourusername"
     }
   };
