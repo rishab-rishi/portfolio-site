@@ -53,13 +53,13 @@
         link: "https://okagency.in/",
         image: "🔩"
       },
-      // {
-      //   title: "Weather Dash",
-      //   description: "Beautiful weather dashboard with location-based forecasts, interactive maps, and customizable widgets.",
-      //   tags: ["React", "TypeScript", "OpenWeather API"],
-      //   link: "https://github.com/yourusername/weather-dash",
-      //   image: "🌤️"
-      // },
+      {
+        title: "SaaS Website Demo",
+        description: "A modern SaaS website demo with responsive design and interactive elements.",
+        tags: ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Next.js"],
+        link: "https://saas-site-demo.vercel.app/",
+        image: "🚀"
+      },
       // {
       //   title: "Code Snippet Manager",
       //   description: "Organize and share code snippets with syntax highlighting, tagging system, and community features.",
