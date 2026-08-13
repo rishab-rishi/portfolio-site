@@ -1,42 +1,38 @@
-# sv
+# Portfolio Site
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+My personal portfolio — built with SvelteKit rather than my usual React/Next.js stack, as a deliberate exercise in working outside the framework I use day to day.
 
-## Creating a project
+**🔗 Live: [rishab.codes](https://rishab.codes)**
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project
-npx sv create my-app
+## Stack
+
+SvelteKit · TypeScript · Tailwind CSS · Vite
+
+## Why SvelteKit
+
+Most of my client work is Next.js. Building the portfolio in SvelteKit kept me honest about which of my habits are genuinely good practice and which are just React conventions — Svelte's compile-time reactivity and lack of a virtual DOM force a different way of thinking about state.
+
+## Running locally
+
+```bash
+npm install
+npm run dev          # or: npm run dev -- --open
 ```
 
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --no-install portfolio-svelte
+```bash
+npm run build        # production build
+npm run preview      # preview the production build
 ```
 
-## Developing
+## Project structure
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```
+src/          routes and components
+static/       fonts, images, favicon
 ```
 
-## Building
+---
 
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+<sub>Built by <a href="https://rishab.codes">Rishab</a> · <a href="mailto:rishab.codes01@gmail.com">rishab.codes01@gmail.com</a></sub>
