@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git restore *)",
+      "Bash(git clone *)",
+      "Read(//d/Programming-stuff/Coding projects/**)",
+      "Bash(mv \"Portfolio-site\" \"Portfolio-site.backup\")",
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match 'node|Code|vite|esbuild' } | Select-Object Id, ProcessName, Path)",
+      "PowerShell(Stop-Process -Id 31396 -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(Rename-Item -Path \"d:\\\\Programming-stuff\\\\Coding projects\\\\Portfolio-site\" -NewName \"Portfolio-site.backup\" -ErrorAction Stop)",
+      "Bash(git ls-tree *)",
+      "Bash(git rm *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
