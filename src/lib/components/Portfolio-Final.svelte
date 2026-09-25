@@ -19,16 +19,16 @@
       tagline: "Building digital experiences that matter",
       description: "Transforming ideas into elegant, functional code"
     },
-    
+
     about: {
       text: "I'm a developer passionate about creating clean and efficient solutions to complex problems. With a focus on user experience and modern web technologies, I build applications that are both powerful and intuitive. When I'm not coding, you'll find me exploring new frameworks, or sketching out the next big idea.",
       highlights: [
-        "3+ years of development experience",
+        "4+ years of development experience",
         "Focus on React & Node.js ecosystems",
         "Passionate about clean code & UX"
       ]
     },
-    
+
     skills: [
       { name: "React", category: "Frontend", level: 90 },
       { name: "TypeScript", category: "Language", level: 85 },
@@ -44,7 +44,7 @@
       { name: "Python", category: "Language", level: 70 },
       { name: "Java", category: "Language", level: 80 }
     ],
-    
+
     projects: [
       {
         title: "Ok Agencies Website",
@@ -68,7 +68,7 @@
       //   image: "💾"
       // }
     ],
-    
+
     contact: {
       email: "rishab.codes01@gmail.com",
       github: "https://github.com/rishab-rishi",
@@ -96,7 +96,7 @@
     const observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry: IntersectionObserverEntry) => {
         isVisible[entry.target.id] = entry.isIntersecting;
-        
+
         if (entry.isIntersecting) {
           activeSection = entry.target.id;
         }
@@ -117,31 +117,31 @@
 
 <div class="min-h-screen bg-zinc-50 font-sans">
   <Navigation {activeSection} onNavigate={scrollToSection} />
-  
-  <HeroSection 
+
+  <HeroSection
     heroData={PORTFOLIO_DATA.hero}
     email={PORTFOLIO_DATA.contact.email}
     isVisible={isVisible.hero || false}
     onNavigate={scrollToSection}
   />
-  
-  <AboutSection 
+
+  <AboutSection
     aboutData={PORTFOLIO_DATA.about}
     isVisible={isVisible.about || false}
   />
-  
-  <SkillsSection 
+
+  <SkillsSection
     skills={PORTFOLIO_DATA.skills}
     isVisible={isVisible.skills || false}
   />
-  
-  <ProjectsSection 
+
+  <ProjectsSection
     projects={PORTFOLIO_DATA.projects}
     githubUrl={PORTFOLIO_DATA.contact.github}
     isVisible={isVisible.projects || false}
   />
-  
-  <Footer 
+
+  <Footer
     contactData={PORTFOLIO_DATA.contact}
     authorName={PORTFOLIO_DATA.hero.name}
   />
