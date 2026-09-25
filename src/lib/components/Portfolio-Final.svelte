@@ -60,6 +60,13 @@
         link: "https://saas-site-demo.vercel.app/",
         image: "🚀"
       },
+      {
+        title: "Acoustic Ledger",
+        description: "An e-commerce store for professional studio audio gear, including monitors, headphones, amplifiers, equalizers, and cables. It has category browsing, live stock status, a shopping cart, user accounts with order history, and PayPal checkout (running in sandbox mode).",
+        tags: ["Next.js", "React", "Tailwind CSS", "PayPal", "E-commerce"],
+        link: "https://acoustic-ledger-nine.vercel.app/",
+        image: "🎧"
+      },
       // {
       //   title: "Code Snippet Manager",
       //   description: "Organize and share code snippets with syntax highlighting, tagging system, and community features.",
