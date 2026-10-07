@@ -16,16 +16,16 @@
     hero: {
       name: "Rishab",
       title: "Full Stack Developer",
-      tagline: "Building digital experiences that matter",
-      description: "Transforming ideas into elegant, functional code"
+      tagline: "I design, build and deploy Next.js and Postgres products end to end.",
+      description: "Four years of freelance client work. Open to remote roles."
     },
 
     about: {
       text: "I'm a developer passionate about creating clean and efficient solutions to complex problems. With a focus on user experience and modern web technologies, I build applications that are both powerful and intuitive. When I'm not coding, you'll find me exploring new frameworks, or sketching out the next big idea.",
       highlights: [
         "4+ years of development experience",
-        "Focus on React & Node.js ecosystems",
-        "Passionate about clean code & UX"
+        "Next.js, TypeScript and PostgreSQL in production",
+        "Client sites and SaaS builds, shipped end to end"
       ]
     },
 
@@ -36,27 +36,23 @@
       { name: "Tailwind CSS", category: "Frontend", level: 90 },
       { name: "MySQL", category: "Database", level: 85 },
       { name: "MongoDB", category: "Database", level: 75 },
+      { name: "PostgreSQL", category: "Database", level: 85 },
+      { name: "Prisma", category: "Database", level: 80 },
       { name: "JavaScript", category: "Language", level: 90 },
       { name: "Express.js", category: "Backend", level: 80 },
       { name: "RESTful APIs", category: "API", level: 90 },
       {name: "Next.js", category: "Frontend", level: 90},
       { name: "Git", category: "Tools", level: 85 },
+      { name: "Vercel", category: "Tools", level: 85 },
       { name: "Python", category: "Language", level: 70 },
       { name: "Java", category: "Language", level: 80 }
     ],
 
     projects: [
       {
-        title: "Ok Agencies Website",
-        description: "A website that sells fastners and bolts online. It has a clean and modern design, and is built with React, Node.js, Next.js, and Tailwind CSS.",
-        tags: ["React", "Node.js", "nextjs", "Tailwind CSS"],
-        link: "https://okagency.in/",
-        image: "🔩"
-      },
-      {
-        title: "SaaS Website Demo",
-        description: "A modern SaaS website demo with responsive design and interactive elements.",
-        tags: ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Next.js"],
+        title: "Fieldwork — Freelancer Client Portal",
+        description: "Multi-tenant SaaS for freelancers: clients, projects, invoicing with PDF export, file uploads and a read-only client portal. Role-based permissions (owner, admin, member, client), plan-based usage caps and a revenue dashboard. Demo logins are seeded.",
+        tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth", "Tailwind CSS"],
         link: "https://saas-site-demo.vercel.app/",
         image: "🚀"
       },
@@ -66,6 +62,13 @@
         tags: ["Next.js", "React", "Tailwind CSS", "PayPal", "E-commerce"],
         link: "https://acoustic-ledger-nine.vercel.app/",
         image: "🎧"
+      },
+      {
+        title: "OK Agencies — Fastener Distributor Website",
+        description: "Product-catalogue and enquiry site for a Chennai fastener distributor trading since 1979 and an authorised distributor for Mangal Industries Limited. Category pages for hex head, socket head, washers, nuts and coatings, an industries-served section, and a contact form. Deployed on Vercel.",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+        link: "https://ok-agencies.vercel.app/",
+        image: "🔩"
       },
       // {
       //   title: "Code Snippet Manager",
