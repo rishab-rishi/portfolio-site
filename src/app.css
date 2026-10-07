@@ -1,3 +1,157 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --bg: #090a0a;
+    --surface: #101211;
+    --surface-hover: #151715;
+    --text: #f2f0e9;
+    --text-muted: #a0a39b;
+    --text-subtle: #858783;
+    --accent: #c8ff3d;
+    --border: #292b29;
+    --border-hover: #4a4d48;
+    --radius: 8px;
+    --header-h: 64px;
+    color-scheme: dark;
+  }
+
+  @media (min-width: 768px) {
+    :root { --header-h: 72px; }
+  }
+
+  @media (min-width: 1024px) {
+    :root { --header-h: 80px; }
+  }
+
+  html {
+    background: var(--bg);
+    color: var(--text);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+
+  body {
+    @apply font-sans text-base md:text-lg antialiased;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  section[id] {
+    scroll-margin-top: var(--header-h);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1280px] px-5 md:px-8 lg:px-12;
+  }
+
+  .section-pad {
+    @apply py-[80px] md:py-24 lg:py-[140px];
+  }
+
+  .label {
+    @apply font-mono text-xs uppercase tracking-[0.08em];
+  }
+
+  .section-label {
+    @apply label flex items-center gap-3 text-ink;
+  }
+
+  .section-label::before {
+    content: "/";
+    @apply text-accent;
+  }
+
+  .section-title {
+    @apply font-display text-[2rem] md:text-5xl lg:text-[3.5rem] font-bold leading-[1.05] tracking-[-0.03em];
+  }
+
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[var(--radius)] px-6 py-3
+      font-mono text-sm uppercase tracking-[0.08em] transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent text-bg hover:bg-[#d6ff70];
+  }
+
+  .btn-secondary {
+    @apply btn border border-line text-ink hover:border-line-hover hover:bg-surface-hover;
+  }
+
+  .link-arrow {
+    @apply inline-block transition-transform duration-200;
+  }
+
+  a:hover > .link-arrow,
+  .group:hover .link-arrow {
+    transform: translateX(4px);
+  }
+
+  .frame {
+    @apply overflow-hidden rounded-[var(--radius)] border border-line bg-surface;
+  }
+
+  /* Reveal on scroll. Hidden state only applies once JS has marked the page,
+     so content stays visible if scripting fails. */
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 450ms ease-out, transform 450ms ease-out;
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 7.5vw, 7rem);
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+  }
+
+  @media (max-width: 767px) {
+    .hero-title {
+      font-size: clamp(3rem, 14vw, 4rem);
+    }
+  }
+
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, rgb(242 240 233 / 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(242 240 233 / 0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 40%, transparent 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .project-image, .link-arrow {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

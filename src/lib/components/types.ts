@@ -3,41 +3,71 @@
 export interface HeroData {
   name: string;
   title: string;
-  tagline: string;
   description: string;
+  available: boolean;
 }
 
-export interface AboutData {
-  text: string;
-  highlights: string[];
-}
-
-export interface Skill {
-  name: string;
-  category: string;
-  level: number;
+export interface ProjectImage {
+  src: string;
+  srcSmall: string;
+  width: number;
+  height: number;
+  alt: string;
+  caption?: string;
 }
 
 export interface Project {
   title: string;
+  category: string;
   description: string;
-  tags: string[];
+  stack: string[];
+  highlights: string[];
   link: string;
-  image: string;
+  caseStudy?: string;
+  image: ProjectImage;
+  featured?: boolean;
+}
+
+export interface Proof {
+  heading: string;
+  text: string;
+}
+
+export interface Fact {
+  label: string;
+  value: string;
+}
+
+export interface AboutData {
+  paragraphs: string[];
+  facts: Fact[];
+}
+
+export interface ExperienceItem {
+  role: string;
+  period?: string;
+  summary: string;
+  points: string[];
+}
+
+export interface StackGroup {
+  name: string;
+  items: string[];
 }
 
 export interface ContactData {
   email: string;
   github: string;
-  linkedin: string;
+  linkedin?: string;
 }
 
 export interface PortfolioData {
   hero: HeroData;
-  about: AboutData;
-  skills: Skill[];
   projects: Project[];
+  proof: Proof[];
+  about: AboutData;
+  experience: ExperienceItem[];
+  stack: StackGroup[];
+  alsoFamiliar: string[];
   contact: ContactData;
 }
-
-export type SectionVisibility = Record<string, boolean>;
