@@ -5,8 +5,8 @@
 </script>
 
 <article
-  class="group h-full overflow-hidden rounded-[var(--radius)] border border-line bg-surface transition-colors duration-200
-    hover:border-line-hover hover:bg-surface-hover
+  class="group relative h-full cursor-pointer overflow-hidden rounded-[var(--radius)] border border-line bg-surface transition-colors duration-200
+    hover:border-line-hover hover:bg-surface-hover has-[a:focus-visible]:border-accent
     {featured ? 'lg:grid lg:grid-cols-[3fr_2fr]' : 'flex flex-col'}"
 >
   <div class="p-3 md:p-4 {featured ? 'lg:p-5' : 'pb-0 md:pb-0'}">
@@ -55,13 +55,14 @@
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        class="label inline-flex min-h-[44px] items-center gap-2 text-ink hover:text-accent"
+        class="label inline-flex min-h-[44px] items-center gap-2 text-ink group-hover:text-accent focus-visible:outline-none
+          after:absolute after:inset-0 after:content-['']"
       >
         View live <span class="link-arrow" aria-hidden="true">→</span>
         <span class="sr-only">— {project.title} (opens in a new tab)</span>
       </a>
       {#if project.caseStudy}
-        <a href={project.caseStudy} class="label inline-flex min-h-[44px] items-center gap-2 text-muted hover:text-ink">
+        <a href={project.caseStudy} class="label relative z-10 inline-flex min-h-[44px] items-center gap-2 text-muted hover:text-ink">
           Read case study <span class="link-arrow" aria-hidden="true">→</span>
         </a>
       {/if}
