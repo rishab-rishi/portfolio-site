@@ -7,28 +7,28 @@
   export let isVisible: boolean = false;
 </script>
 
-<section 
-  id="about" 
+<section
+  id="about"
   class="min-h-screen flex items-center justify-center px-6 py-20 bg-white"
 >
   <div class="max-w-6xl w-full">
     <div class="transition-all duration-1000 delay-100 {isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}">
-      <h2 
+      <h2
         class="text-6xl md:text-8xl font-black mb-12"
         style="font-family: 'Space Grotesk', sans-serif;"
       >
         About <span class="text-zinc-300">Me</span>
       </h2>
-      
+
       <div class="grid md:grid-cols-2 gap-12">
         <div>
           <p class="text-lg md:text-xl text-zinc-700 leading-relaxed mb-8">
             {aboutData.text}
           </p>
-          
+
           <div class="space-y-4">
             {#each aboutData.highlights as highlight, idx}
-              <div 
+              <div
                 class="flex items-start gap-3"
                 style="animation: fadeIn 0.6s ease-out {0.2 + idx * 0.1}s both;"
               >
@@ -38,7 +38,7 @@
             {/each}
           </div>
         </div>
-        
+
         <div class="bg-zinc-50 border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
           <div class="flex items-center gap-3 mb-6">
             <Code2 class="w-8 h-8" />
@@ -46,7 +46,7 @@
               Quick Facts
             </h3>
           </div>
-          
+
           <div class="space-y-4 text-lg">
             <div class="flex justify-between pb-3 border-b-2 border-zinc-300">
               <span class="font-semibold">Location</span>
@@ -54,7 +54,7 @@
             </div>
             <div class="flex justify-between pb-3 border-b-2 border-zinc-300">
               <span class="font-semibold">Experience</span>
-              <span class="text-zinc-600">3+ Years</span>
+              <span class="text-zinc-600">4+ Years</span>
             </div>
             <div class="flex justify-between pb-3 border-b-2 border-zinc-300">
               <span class="font-semibold">Focus</span>
