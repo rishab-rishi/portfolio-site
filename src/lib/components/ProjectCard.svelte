@@ -1,15 +1,19 @@
 <script lang="ts">
   import type { Project } from './types';
 
-  let { project, featured = false }: { project: Project; featured?: boolean } = $props();
+  let {
+    project,
+    featured = false,
+    reverse = false
+  }: { project: Project; featured?: boolean; reverse?: boolean } = $props();
 </script>
 
 <article
   class="group relative h-full cursor-pointer overflow-hidden rounded-[var(--radius)] border border-line bg-surface transition-colors duration-200
     hover:border-line-hover hover:bg-surface-hover has-[a:focus-visible]:border-accent
-    {featured ? 'lg:grid lg:grid-cols-[3fr_2fr]' : 'flex flex-col'}"
+    {featured ? `lg:grid ${reverse ? 'lg:grid-cols-[2fr_3fr]' : 'lg:grid-cols-[3fr_2fr]'}` : 'flex flex-col'}"
 >
-  <div class="p-3 md:p-4 {featured ? 'lg:p-5' : 'pb-0 md:pb-0'}">
+  <div class="p-3 md:p-4 {featured ? 'lg:p-5' : 'pb-0 md:pb-0'} {reverse ? 'lg:order-last' : ''} {featured ? 'lg:self-center' : ''}">
     <div class="h-full overflow-hidden rounded-[6px] border border-line">
     <img
       src={project.image.srcSmall}

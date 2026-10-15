@@ -5,8 +5,8 @@
 
   let { projects, githubUrl }: { projects: Project[]; githubUrl: string } = $props();
 
-  const featured = $derived(projects.find((p) => p.featured));
-  const rest = $derived(projects.filter((p) => p !== featured));
+  const featured = $derived(projects.filter((p) => p.featured));
+  const rest = $derived(projects.filter((p) => !p.featured));
 </script>
 
 <section id="work" class="section-pad border-b border-line">
@@ -27,11 +27,11 @@
     </div>
 
     <div class="grid gap-5 md:gap-6 lg:gap-8">
-      {#if featured}
+      {#each featured as project, i}
         <div use:reveal>
-          <ProjectCard project={featured} featured />
+          <ProjectCard {project} featured reverse={i % 2 === 1} />
         </div>
-      {/if}
+      {/each}
       <div class="grid gap-5 md:grid-cols-2 md:gap-6 lg:gap-8">
         {#each rest as project, i}
           <div use:reveal={i * 80}>

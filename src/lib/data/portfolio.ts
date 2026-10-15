@@ -34,6 +34,28 @@ export const PORTFOLIO_DATA: PortfolioData = {
       featured: true
     },
     {
+      title: 'Half-Built App Hospital',
+      category: 'AI-assisted developer tool',
+      description:
+        'Describe an unfinished app and get a provisional recovery plan: up to three clarifying questions, a diagnosis that separates reported facts from hypotheses, and a recovery board where every task links back to your own words.',
+      stack: ['Next.js', 'TypeScript', 'Upstash Redis', 'Groq'],
+      highlights: [
+        'Evidence-linked diagnosis',
+        'Bot checks, rate limits and spend budgets',
+        'Sample charts with no sign-in',
+        'Markdown plan export'
+      ],
+      link: 'https://half-built-app-hospital.vercel.app/',
+      image: {
+        src: '/projects/half-built-app-hospital.webp',
+        srcSmall: '/projects/half-built-app-hospital-720.webp',
+        width: 1440,
+        height: 900,
+        alt: 'Half-Built App Hospital home page with the headline “Half-built. Still full of possibility.” beside a sample patient chart'
+      },
+      featured: true
+    },
+    {
       title: 'Acoustic Ledger',
       category: 'E-commerce store',
       description:
@@ -69,7 +91,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
   proof: [
     { heading: '4+ years', text: 'Freelance development' },
-    { heading: '3 projects', text: 'Selected work, all live' },
+    { heading: '4 projects', text: 'Selected work, all live' },
     { heading: 'Full stack', text: 'Interface → backend → database → deployment' }
   ],
 
@@ -93,7 +115,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
       points: [
         'Turn requirements into interface designs and a build plan',
         'Build applications with Next.js, TypeScript and PostgreSQL',
-        'Integrate authentication, payments (PayPal) and PDF generation',
+        'Integrate authentication, payments (PayPal), PDF generation and LLM APIs',
         'Deploy on Vercel and hand projects over to client teams'
       ]
     }
@@ -102,8 +124,8 @@ export const PORTFOLIO_DATA: PortfolioData = {
   stack: [
     { name: 'Frontend', items: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'] },
     { name: 'Backend', items: ['Node.js', 'Express', 'REST APIs', 'Auth.js'] },
-    { name: 'Data', items: ['PostgreSQL', 'Prisma', 'Drizzle', 'MongoDB', 'MySQL'] },
-    { name: 'Tools', items: ['Git', 'Vercel', 'Docker'] }
+    { name: 'Data', items: ['PostgreSQL', 'Prisma', 'Drizzle', 'Redis', 'MongoDB', 'MySQL'] },
+    { name: 'Tools', items: ['Git', 'Vercel', 'Docker', 'Vitest', 'Playwright'] }
   ],
   alsoFamiliar: ['Python', 'Java'],
 
